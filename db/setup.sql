@@ -1,5 +1,5 @@
-DROP DATABASE IF EXIST shoppingfy;
+DROP DATABASE IF EXISTS shoppingfy;
 CREATE DATABASE shoppingfy;
 
-DROP DATABASE IF EXIST shoppingfy_test;
+DROP DATABASE IF EXISTS shoppingfy_test;
 CREATE DATABASE shoppingfy_test;
