@@ -5,8 +5,8 @@ const baseConfig = {
   migrations: {
     directory: "./db/migrations",
   },
-  seed: {
-    directory: "./db/seeds/seed",
+  seeds: {
+    directory: "./db/seeds",
   },
 };
 const customConfig = {
@@ -30,10 +30,12 @@ const customConfig = {
       ssl: {
         rejectUnauthorized: false,
       },
-    },}
+    },
+  },
 };
 const log = console.log;
 console.log = (...args) => {
   if (!/FsMigrations/.test(args[0])) log(...args);
 };
-module.exports = { ...baseConfig, ...customConfig[ENV] };
+
+module.exports = { ...customConfig[ENV], ...baseConfig };
