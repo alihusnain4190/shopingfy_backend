@@ -4,7 +4,7 @@ module.exports = [
     l_item: "chicken",
     l_quantity: "2",
     l_done: false,
-    u_id: 1,
+    u_name: "ali",
     c_id: 1,
   },
   {
@@ -12,7 +12,7 @@ module.exports = [
     l_item: "grapes",
     l_quantity: "1",
     l_done: false,
-    u_id: 2,
+    u_name: "admin",
     c_id: 1,
   },
 ];

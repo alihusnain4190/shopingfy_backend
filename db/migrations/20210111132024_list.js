@@ -7,7 +7,7 @@ exports.up = function (knex) {
     listTable.boolean("l_done").defaultTo(false);
     listTable.timestamp("created_at").defaultTo(knex.fn.now());
     listTable.timestamp("updated_at").defaultTo(knex.fn.now());
-    listTable.integer("u_id").unsigned().references("user.u_id");
+    listTable.string("u_name").references("user.u_name");
     listTable.integer("c_id").unsigned().references("category.c_id");
   });
 };

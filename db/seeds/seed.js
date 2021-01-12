@@ -10,7 +10,7 @@ exports.seed = async (knex) => {
   
   const listData =await knex("list").insert(list, "*");
 
-  console.log(listData)
+  // console.log(listData
   // await Promise.all([userData, categoryData, itemsData])
   //   .then((resp) => {
   //     console.log(resp);

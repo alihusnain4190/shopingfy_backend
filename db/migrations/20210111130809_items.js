@@ -5,7 +5,7 @@ exports.up = function (knex) {
     itemTable.string("i_image");
     itemTable.string("i_note");
     itemTable.integer("c_id").references("category.c_id");
-    itemTable.integer("u_id").references("user.u_id");
+    itemTable.string("u_name").references("user.u_name");
     itemTable.timestamp("created_at").defaultTo(knex.fn.now());
     itemTable.timestamp("updated_at").defaultTo(knex.fn.now());
   });
