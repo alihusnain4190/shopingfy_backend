@@ -1,7 +1,6 @@
 exports.up = function (knex) {
-  console.log("house table create");
   return knex.schema.createTable("user", (userTable) => {
-    userTable.string("u_name").primary();
+    userTable.string("u_name").unique();
     userTable.string("u_email").notNullable();
     userTable.string("u_password").notNullable();
 
